@@ -13,7 +13,7 @@ body{
   background-color: #e66767;
 }
 .porfile{
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url(../img/0.jpg);
     /* background-image: url(../img/backgroun-protafil.jpg); */
     background-repeat:  no-repeat ;
@@ -59,7 +59,7 @@ body{
     transition: .4s linear;
     font-size: 20px;
 
-}z
+}
 
 .nav:hover{
     background-color:#304157;
@@ -113,20 +113,21 @@ h1 {
     font-size: 35px;
     letter-spacing: 5px;
 }
-p {
+.TellForMe {
     color: white;
     opacity: .6;
     line-height: 23px;
 
 }
-.photo{
-    width: 400px;
-    height: 100%;
-    background:url(../img/profile102.png);
+.PhotoHome{
+    /* width: 400px; */
+    /* height: 100%; */
+    /* background:url(../img/profile102.png); */
     background-repeat: no-repeat;
     background-size: contain;
     opacity: .7;
     filter: grayscale(40%);
+    margin-right: 115px;
     
 
 }
@@ -165,9 +166,6 @@ p {
     grid-column-end: 7;
     border-radius: 50px 50px 1px 1px;
     font-size: 30px;
-    /* opacity: 0; */
-    /* visibility: hidden; */
-
 
 }
 .footer-card:hover{
@@ -186,164 +184,104 @@ p {
     opacity: 1;
 
 }
-  .footer-card a:hover {
+.footer-card a:hover {
     color: #e66767;
 
   }
 
 
-/* .header-card{
-    height: inherit;
-    display: flex;
-    justify-content: space-between;
-    background-color: #ddd;
+  /* start old about */
+/* .aboutMeCard{
+  height: 100vh;
+  padding: 100px 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.descripForMe{
+  width: 600px;
+  height: 400px;
+  background-color: #ddd;
+  padding:30px;
 
-} */
+}
+
+.PhotoAbout{
+  height: 400px;
+  box-shadow: 12px -11px 15px 4px #2b3c56;} */
+/* end old about  */
 
 
-/* .aboutme {
-    height: 100%;
-    background: url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)
-      no-repeat center;
-    background: red;
-    background-size: cover;
-    display: inline-flex; 
-    align-items: center;
-    justify-content: center;
-  }*/
-   
-  .aboutme{
-    background: #f7b979;
-    padding-top: 20px;
-    background-image: url(../img/0.jpg) ;
-    background-repeat:  no-repeat ;
-    background-size: cover;
-    background-position: bottom;
-
-    
-
-  }
-
-  .Box-card {
-    width: 400px;
-    text-align: center;
-    border-radius: 8px;
+/* Start About Me */
+  .about-me {
+    background-color: #f2f2f2;
     overflow: hidden;
-    margin: auto;
+    padding: 50px 10px;
+    /*width: 100%;*/
+  }
+    /*border: 0.5em solid;*/
+  .about-me >div{
+    /*box-sizing: border-box;*/
+  }
+  .about-me .image {
+    float: left;
+    width: 30% ;
+    box-shadow: 6px 9px 20px 4px #2b3c56;
+    /*height: 600px;*/
   
-    
   }
   
-  .card-header {
-    background: #2c3a47;
-    padding: 60px 40px;
+  .about-me .image img {
+    width: 100%;
+    /*height: 100%;*/
   }
   
-  .pic {
-    display: inline-block;
-    padding: 8px;
-    /* background: linear-gradient(130deg, #74b9ff, #e66767); */
-    margin: auto;
-    border-radius: 50%;
-    background-size: 100% 100%;
+  .about-me .info {
+    float: left;
+    width: 65%;
+    margin: 1.5% 2.5% 0 2.5%;
   }
   
-  /* @keyframes animated-gradient {
-    25% {
-      background-position: left bottom;
-    }
-    50% {
-      background-position: right bottom;
-    }
-    75% {
-      background-position: right top;
-    }
-    100% {
-      background-position: left top;
-    }
-  } */
-  
-  .pic img {
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+  .about-me .info h2 {
+    margin: 20px 0 20px 40px;
+    color: #555;
   }
-  
-  .name {
-    color: #f2f2f2;
-    font-size: 28px;
-    font-weight: 600;
-    margin: 10px 0;
+  .about-me .info >p {
+    margin: 0 0 10px 40px;
   }
+  .about-me .info > p:last-of-type {
+    margin-top: 10px;
   
-  .desc {
-    font-size: 18px;
-    color: #e66767;
   }
-  
-  .sm {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+  .about-me .info  p {
+    line-height: 1.5;
+    color: #888;
   }
-  
-  .sm a {
-    color: #f2f2f2;
-    width: 56px;
-    font-size: 22px;
-    transition: 0.3s linear;
+  .about-me .info .hobbies {
+    overflow: hidden;
+    margin: 20px 0 0 40px;
   }
-  
-  .sm a:hover {
-    color: #e66767;
+  .about-me .info .hobbies .content {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    min-height: 100px;
+    overflow: hidden;
   }
-  
-  .contact-btn {
-    display: inline-block;
-    padding: 12px 50px;
-    color: #e66767;
-    border: 2px solid #e66767;
-    border-radius: 6px;
-    margin-top: 16px;
-    transition: 0.3s linear;
+  .about-me .info .hobbies .content h3{
+    color: #555;
   }
-  
-  .contact-btn:hover {
-    background: #e66767;
-    color: #f2f2f2;
+  .about-me .info .hobbies .content .icon {
+    float: left;
+    width: 12%;
   }
-  
-  .card-footer {
-    background: #f4f4f4;
-    padding: 60px 10px;
+  .about-me .info .hobbies .content .icon i{
+    max-width: 100%;
+    padding-top: 10px;
   }
-  
-  .numbers {
-    display: flex;
-    align-items: center;
+  .about-me .info .hobbies .content .text {
+    float: left;
+    width: 84%;
+    margin-left: 2%;
   }
+  /* End About Me */
   
-  .item {
-    flex: 1;
-    text-transform: uppercase;
-    font-size: 13px;
-    color: #e66767;
-  }
-  
-  .item span {
-    display: block;
-    color: #2c3a47;
-    font-size: 30px;
-  }
-  
-  .border {
-    width: 1px;
-    height: 30px;
-    background: #bbb;
-  }
-  
-
-
-
-

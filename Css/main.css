@@ -23,26 +23,35 @@ body{
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 60px 1fr 50px;
     grid-template-areas:
-     "nam nam log log log log log log"
+     "head head head head head head head head"
      "cont cont cont cont cont cont cont cont" 
      "foot foot foot foot foot foot foot foot";
      /* padding-bottom: 20px ; */
      /* margin-bottom: 20px ; */
      
 }
-.nser {
-    grid-area: nam;
+.hedder{
+    width: 100%;
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
     background-color: #1b14148a;
+    position: fixed;
+
+}
+.nser {
+   
     display: flex;
     align-items: center;
     color: white;
     text-transform: capitalize;
     letter-spacing: 1px;
-    padding-left: 20px;
+    padding: 15px;
     font-size: 30px;
     letter-spacing: 2px;
     font-family: auto;
     transition: .2s linear;
+  
 }
 .nser:hover{
     color: #e66767;
@@ -52,36 +61,37 @@ body{
     
 }
 .nav{
-    grid-area: log;
-    background-color: #1b14148a;
-    display: flex;
-    justify-content: end; 
-    transition: .4s linear;
-    font-size: 20px;
+  display: flex;
+  justify-content: end;
+  transition: .4s linear;
+  font-size: 20px;
+  justify-content: space-evenly;
+  width: 700px;
 
 }
 
-.nav:hover{
-    background-color:#304157;
-    
-}
+
 .nav a{
-    width: 100px;
-    align-self: center;
-    color: white;
-    transition: .4s linear;
-    text-align: center;
-    padding: 10px;
-     margin: 0 10px;
+  width: 100px;
+  align-self: center;
+  color: white;
+  transition: .4s linear;
+  text-align: center;
+  padding: 10px;
+  margin: 0 10px;
+  border-bottom: 2px solid;
+  border-radius: 3px;
 }
 .nav a:hover{
-    color: #e66767;
-    border-radius: 10px 10px;
+  color: #e66767;
+  border-radius: 10px 10px;
 }
 .nav a:focus{
     color: #e66767;
     border: 2px solid #304157;
     border-radius: 30px;
+    background-color: #304157;
+
     
 }
 .border {
@@ -90,7 +100,7 @@ body{
     background: #bbb;
     align-self: center;
   }
-  
+  /* Content Home Page */
 .content{
     grid-area: cont;
     display: flex;
@@ -120,9 +130,6 @@ h1 {
 
 }
 .PhotoHome{
-    /* width: 400px; */
-    /* height: 100%; */
-    /* background:url(../img/profile102.png); */
     background-repeat: no-repeat;
     background-size: contain;
     opacity: .7;
@@ -131,25 +138,6 @@ h1 {
     
 
 }
-
-
-
-          /* haerf-photo  نص اصوره*/
-
-/* .photo {
-    width: 445px;
-    height: 505px;
-    background: url(../img/profile102.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .7;
-    margin: 0 auto;
-
-} */
-
-
-
-
 
 
 .footer-card{
@@ -190,49 +178,23 @@ h1 {
   }
 
 
-  /* start old about */
-/* .aboutMeCard{
-  height: 100vh;
-  padding: 100px 50px;
-  display: flex;
-  justify-content: space-around;
-}
-.descripForMe{
-  width: 600px;
-  height: 400px;
-  background-color: #ddd;
-  padding:30px;
-
-}
-
-.PhotoAbout{
-  height: 400px;
-  box-shadow: 12px -11px 15px 4px #2b3c56;} */
-/* end old about  */
-
 
 /* Start About Me */
   .about-me {
-    background-color: #f2f2f2;
+    background-color: rgb(242, 242, 242);
     overflow: hidden;
-    padding: 50px 10px;
-    /*width: 100%;*/
+    padding: 85px 10px 20px;
   }
-    /*border: 0.5em solid;*/
-  .about-me >div{
-    /*box-sizing: border-box;*/
-  }
+ 
   .about-me .image {
     float: left;
     width: 30% ;
     box-shadow: 6px 9px 20px 4px #2b3c56;
-    /*height: 600px;*/
   
   }
   
   .about-me .image img {
     width: 100%;
-    /*height: 100%;*/
   }
   
   .about-me .info {
